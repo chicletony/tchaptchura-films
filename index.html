@@ -507,7 +507,7 @@
         <!-- Tela da TV com Curvatura e Scanlines -->
         <div class="md:col-span-8">
           <div class="crt-screen aspect-[4/3] bg-black border-4 border-[#121316] relative flex items-center justify-center overflow-hidden">
-            <video id="modal-screen-video" src="./videos/intro.mp4?v=20261106" playsinline controls loop class="w-full h-full object-cover hidden z-10"></video></video>
+            <video id="modal-screen-video" src="./videos/intro.mp4?v=20261106_v3" playsinline controls loop class="w-full h-full object-cover hidden z-10"></video>
             <img id="modal-screen-poster" src="./images/poster1_veludo_eletrico.jpg" alt="Poster na TV" class="w-full h-full object-cover opacity-90 transition-transform duration-700 hover:scale-105" />
             <div class="absolute bottom-4 left-4 right-4 bg-black/70 backdrop-blur-sm px-3.5 py-1.5 rounded-xl border border-white/10 flex items-center justify-between text-[11px] font-mono text-amber-300 z-30">
               <span id="modal-screen-badge">CANAL 01 • TRANSMISSÃO IA</span>
@@ -747,13 +747,13 @@
     scene.add(carGroup);
 
     const textureLoader = new THREE.TextureLoader();
-    const posterTexture = textureLoader.load('./images/pug_car_hero.png?v=20261106');
+    const posterTexture = textureLoader.load('./images/pug_car_hero.png?v=20261106_v3');
     posterTexture.minFilter = THREE.LinearFilter;
     posterTexture.magFilter = THREE.LinearFilter;
 
     // Vídeo H.264 com canal Alfa (Stacked RGB + Alpha Matte)
     const carVideo = document.createElement('video');
-    carVideo.src = './videos/pug_car_matte.mp4?v=20261106';
+    carVideo.src = './videos/pug_car_matte.mp4?v=20261106_v3';
     carVideo.crossOrigin = 'anonymous';
     carVideo.loop = true;
     carVideo.muted = true;
@@ -1411,8 +1411,8 @@
       'pug': {
         title: 'Pug & Copiloto no Thunderbird 1957',
         desc: 'Produção Oficial • Motor V8, Copiloto com Cerveja, Pneus Rodando & IA Generativa',
-        poster: './images/pug_car_hero.png?v=20261106',
-        video: './videos/intro.mp4?v=20261106',
+        poster: './images/pug_car_hero.png?v=20261106_v3',
+        video: './videos/intro.mp4?v=20261106_v3',
         waText: 'Olá! Adorei a produção com o Pug e o passageiro no Thunderbird com IA!'
       }
     };
